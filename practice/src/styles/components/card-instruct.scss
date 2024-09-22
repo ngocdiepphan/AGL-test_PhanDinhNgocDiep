@@ -1,0 +1,48 @@
+.card {
+  &__instruct {
+    border: toRem(1) solid #42a7c2;
+    border-radius: toRem(10);
+    padding: toRem(26) toRem(42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: toRem(15);
+    width: 100%;
+    height: toRem(155);
+    font-size: $fs-small;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #eaf1f7;
+      border: toRem(2) solid #42a7c2;
+    }
+
+    @include desktop {
+      width: toRem(300);
+      height: toRem(145);
+      font-size: $fs-x-medium;
+    }
+
+    &__icon {
+      background-position: center;
+      background-repeat: no-repeat;
+      display: block;
+
+      @include desktop {
+        width: toRem(41);
+        height: toRem(27);
+      }
+    }
+
+    &__feature {
+      font-size: $fs-x-medium;
+      color: $color-secondary;
+      text-align: center;
+      font-weight: 500;
+
+      @include desktop {
+        font-size: $fs-x-large;
+      }
+    }
+  }
+}

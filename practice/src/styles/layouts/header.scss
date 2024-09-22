@@ -1,0 +1,82 @@
+.header {
+  margin-top: toRem(20);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+  @include desktop {
+    font-size: 14px;
+    color: $color-secondary;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    width: toRem(440);
+    justify-content: space-between;
+
+    @include desktop {
+      width: toRem(930);
+    }
+  }
+
+  &__icon-menu {
+    background-image: url(../assets//images/icons/menu.svg);
+    width: toRem(20);
+    height: toRem(20);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__house {
+    display: flex;
+    gap: toRem(10);
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    gap: toRem(10);
+
+    @include desktop {
+      gap: toRem(14);
+    }
+
+    &__description {
+      font-size: $fs-small;
+      color: #7b7b7b;
+    }
+
+    &__login {
+      display: flex;
+      gap: toRem(7);
+    }
+
+    &__contract {
+      display: flex;
+      gap: toRem(7);
+    }
+  }
+
+  &__icon-house {
+    display: block;
+    background-image: url(../assets//images//icons/house.svg);
+    width: toRem(18);
+    height: toRem(16);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__icon-login {
+    background-image: url(../assets//images//icons/login.svg);
+  }
+
+  &__icon-mail {
+    background-image: url(../assets//images//icons/mail.svg);
+  }
+}

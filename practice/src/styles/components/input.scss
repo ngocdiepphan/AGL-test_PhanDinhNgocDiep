@@ -1,0 +1,13 @@
+.input {
+  width: toRem(300);
+  height: toRem(39);
+  border: toRem(1) solid #e1e8ef;
+  border-radius: toRem(50);
+  position: relative;
+  padding-left: toRem(48);
+
+  @include desktop {
+    width: toRem(426);
+    height: toRem(50);
+  }
+}

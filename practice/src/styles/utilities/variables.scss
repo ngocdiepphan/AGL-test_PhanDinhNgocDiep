@@ -1,0 +1,33 @@
+// Font family start
+$font-primary: "NotoSansJP";
+// Font family end
+
+// Common color start
+$color-primary: #333;
+$color-secondary: #42a7c2;
+// Common color end
+
+// Background color start
+$bg-color-primary: #fff;
+$bg-color-secondary: #42a7c2;
+// Background color end
+
+// Font size start
+$fs-x-small: 12px;
+$fs-small: 14px;
+$fs-x-medium: 16px;
+$fs-medium: 17px;
+$fs-x-large: 18px;
+$fs-large: 20px;
+$fs-xl-large: 26px;
+
+// Devices
+$desktop: 1920px;
+$mobile: 480px;
+
+//$default font size
+$default-font-size: 16;
+
+:root {
+  --default-font-size: #{$default-font-size};
+}

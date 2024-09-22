@@ -1,0 +1,47 @@
+.card {
+  &__analysis {
+    background-color: #eaf1f7;
+    width: toRem(210);
+    height: toRem(155);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: toRem(15);
+    justify-content: center;
+    cursor: pointer;
+
+    @include desktop {
+      width: toRem(220);
+      height: toRem(160);
+    }
+
+    &__description {
+      font-size: $fs-small;
+      color: $color-secondary;
+
+      @include desktop {
+        font-size: $fs-x-medium;
+      }
+    }
+
+    &__img-summary-mobile {
+      width: toRem(150);
+      height: toRem(70);
+
+      @include desktop {
+        display: none;
+      }
+    }
+
+    &__img-summary-desktop {
+      width: toRem(100);
+      display: none;
+
+      @include desktop {
+        width: toRem(135);
+        height: toRem(61);
+        display: block;
+      }
+    }
+  }
+}

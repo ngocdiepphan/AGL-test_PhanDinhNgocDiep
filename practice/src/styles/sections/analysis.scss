@@ -1,0 +1,40 @@
+.analysis {
+  border-bottom: toRem(1) solid #42a7c2;
+  padding-bottom: toRem(30);
+  max-width: toRem(440);
+
+  &__activity {
+    border-bottom: toRem(1) solid #42a7c2;
+    padding-bottom: toRem(30);
+  }
+
+  &__img {
+    width: toRem(125);
+    height: toRem(138);
+  }
+
+  &__title {
+    font-size: $fs-x-large;
+    color: $color-secondary;
+    font-weight: 600;
+    width: fit-content;
+    padding-top: toRem(22);
+    border-top: toRem(3) solid #42a7c2;
+
+    @include desktop {
+      font-size: $fs-large;
+    }
+  }
+
+  &__list {
+    margin-top: toRem(19);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: toRem(17);
+    max-width: toRem(440);
+
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

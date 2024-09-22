@@ -1,0 +1,97 @@
+.sidebar {
+  width: toRem(200);
+  height: fit-content;
+  border: toRem(1) solid #e1e8ef;
+  display: none;
+  position: fixed;
+  top: toRem(20);
+  transition: 0.3s;
+  background-color: #eaf1f7;
+  z-index: 2;
+
+  @include desktop {
+    width: toRem(220);
+    display: block;
+    position: relative;
+    left: 0;
+    background-color: $bg-color-primary;
+  }
+
+  &.active {
+    display: block;
+    left: 14;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__icon-close {
+    background-image: url(../assets/images/icons/close.svg);
+    width: toRem(14);
+    height: toRem(14);
+    background-repeat: no-repeat;
+    display: block;
+    margin: toRem(20) toRem(20) 0 0;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin: toRem(32) toRem(31) toRem(17) toRem(26);
+  }
+
+  &__logo-mobile {
+    display: block;
+    width: toRem(150);
+    height: toRem(50);
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__logo-desktop {
+    display: none;
+
+    @include desktop {
+      display: block;
+      width: toRem(164);
+      height: toRem(54);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: toRem(1) solid #e1e8ef;
+    padding: toRem(22) toRem(21) toRem(19) toRem(16);
+    font-size: $fs-small;
+    color: $color-primary;
+    cursor: pointer;
+
+    &:hover {
+      border-top: toRem(2) solid #42a7c2;
+      color: $color-secondary;
+      background-color: #eaf1f7;
+    }
+
+    @include desktop {
+      font-size: $fs-x-medium;
+      padding: toRem(25) toRem(24) toRem(21) toRem(19);
+    }
+  }
+
+  &__icon--right-arrow {
+    background-image: url(../assets/images/icons/right-arrow.svg);
+    width: toRem(14);
+    height: toRem(9);
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,49 @@
+.btn {
+  &__support-web {
+    background-color: $bg-color-secondary;
+    color: #fff;
+    font-weight: 600;
+    width: toRem(170);
+    height: toRem(37);
+    border: none;
+    margin: 0 toRem(14) toRem(22) toRem(16);
+    font-size: $fs-small;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #189bbf;
+      border: toRem(3) solid #1093cb;
+    }
+
+    @include desktop {
+      width: toRem(176);
+      height: toRem(43);
+      font-size: $fs-x-large;
+      margin: 0 toRem(23) toRem(27) toRem(21);
+    }
+  }
+
+  &__menu {
+    background-color: $color-primary;
+  }
+
+  &__search {
+    width: toRem(74);
+    height: toRem(39);
+    background-color: $bg-color-secondary;
+    border: none;
+    border-radius: toRem(10);
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #189bbf;
+      border: toRem(3) solid #1093cb;
+    }
+
+    @include desktop {
+      width: toRem(94);
+      height: toRem(49);
+    }
+  }
+}
