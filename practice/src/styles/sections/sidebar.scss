@@ -1,25 +1,11 @@
 .sidebar {
-  width: toRem(200);
-  height: fit-content;
-  border: toRem(1) solid #e1e8ef;
   display: none;
-  position: fixed;
-  top: toRem(20);
-  transition: 0.3s;
-  background-color: #eaf1f7;
-  z-index: 2;
 
   @include desktop {
     width: toRem(220);
+    height: fit-content;
+    border: toRem(1) solid #e1e8ef;
     display: block;
-    position: relative;
-    left: 0;
-    background-color: $bg-color-primary;
-  }
-
-  &.active {
-    display: block;
-    left: 14;
   }
 
   &__close {
@@ -93,5 +79,28 @@
     display: block;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+.sidebar-mobile {
+  width: toRem(205);
+  height: fit-content;
+  border: toRem(1) solid #e1e8ef;
+  display: none;
+  position: fixed;
+  transition: 0.3s;
+  background-color: #eaf1f7;
+  z-index: 2;
+
+  @include desktop {
+    display: none;
+  }
+
+  &.active {
+    display: block;
+
+    @include desktop {
+      display: none;
+    }
   }
 }

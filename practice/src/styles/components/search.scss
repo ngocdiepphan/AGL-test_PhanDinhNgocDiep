@@ -7,20 +7,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: toRem(15);
-  padding-right: toRem(20);
   align-items: center;
   margin-top: toRem(20);
   margin-bottom: toRem(48);
   font-size: $fs-small;
-  padding-top: toRem(20);
-  padding-bottom: toRem(20);
+  padding: toRem(20) toRem(20) toRem(20) toRem(15);
 
   @include desktop {
     width: toRem(930);
     height: toRem(90);
-    padding-left: toRem(85);
-    padding-right: toRem(100);
+    padding: 0 toRem(100) 0 toRem(85);
     font-size: $fs-x-medium;
     flex-direction: row;
   }

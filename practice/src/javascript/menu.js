@@ -1,7 +1,7 @@
 // Attach event listeners to the menu and close icons
 const menuIcon = document.querySelector('.header__icon-menu'); // Select the menu icon
 const closeIcon = document.querySelector('.sidebar__icon-close'); // Select the close icon
-const sidebar = document.querySelector('.sidebar'); // Select the sidebar
+const sidebar = document.querySelector('.sidebar-mobile'); // Select the sidebar
 
 // Open the sidebar when the menu icon is clicked
 menuIcon.addEventListener('click', () => {
